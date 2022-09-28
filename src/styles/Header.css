@@ -1,0 +1,46 @@
+header {
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    gap: 40px;
+    background-color: rgb(25, 76, 151);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 4px 4px 10px inset rgb(22, 66, 133);
+}
+
+.header-element {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-icon {
+    filter: invert(100%);
+    height: 30px;
+    margin-right: 40px;
+}
+
+.header-element:hover,
+.header-icon:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+
+@media (max-width: 500px) {
+    header {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .header-element {
+        font-size: 22px;
+    }
+
+    .header-icon {
+        margin-right: 0;
+        height: 24px;
+    }
+}
