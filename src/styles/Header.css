@@ -1,20 +1,25 @@
-header {
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../assets/fonts/Roboto-Medium.ttf');
+}
+
+.header {
     position: fixed;
     width: 100vw;
-    height: 80px;
+    height: 100px;
     gap: 40px;
     background-color: rgb(25, 76, 151);
-    color: white;
+    box-shadow: 4px 4px 6px inset rgb(22, 66, 133);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 4px 4px 10px inset rgb(22, 66, 133);
+    z-index: 10;
 }
 
 .header-element {
     font-weight: bold;
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .header-icon {
@@ -27,6 +32,12 @@ header {
 .header-icon:hover {
     cursor: pointer;
     transform: translateY(-6px);
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 @media (max-width: 460px) {

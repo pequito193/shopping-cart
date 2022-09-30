@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../assets/fonts/Roboto-Medium.ttf');
+}
+
+/* Main */
+.main {
+    background-color: #ddd;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+}
+
+.introduction {
+    background-image: url('./../assets/images/southeast-asia.jpg');
+    width: 100vw;
+    max-width: 800px;
+    height: 800px;
+    background-position: center center;
+    background-size: cover;
+    filter: invert(0%);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(46, 46, 46);
+    box-shadow: 4px 4px 20px inset rgb(39, 39, 39);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 900px;
+    width: 100vw;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 16px;
+}
+
+.brand,
+.thank-you-note {
+    text-align: center;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(44, 96, 192);
+}
+
+.thank-you-note,
+.contacts {
+    font-weight: bold;
+    font-size: 20px;
+}
