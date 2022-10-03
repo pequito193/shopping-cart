@@ -1,10 +1,12 @@
 import React from "react";
+import './../styles/Catalog.css'
 
 function Catalog() {
 
     return (
         <React.Fragment>
-            <p>Catalog</p>
+            <div className="catalog-main">
+            </div>
         </React.Fragment>
     )
 }

@@ -4,100 +4,31 @@
 }
 
 /* Main */
-.main {
-    background-color: #eee;
-    padding-top: 100px;
-    z-index: 1;
-    width: 100vw;
-    height: 700px;
-}
-
-.introduction {
-    background-image: url('./../assets/images/southeast-asia.jpg');
-    margin-left: calc(50vw - 450px);
-    max-width: 900px;
-    height: 700px;
-    overflow-y: hidden;
+.homepage-main {
+    background-color: rgb(202, 211, 221);
+    background-image: url('./../assets/images/worldmap.jpg');
     background-position: center center;
     background-size: cover;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 4px 0 8px rgb(129, 129, 129);
-    transition: 1s;
-}
-
-.introduction-text {
-    opacity: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    padding: 20px;
-    line-height: 60px;
-    height: inherit;
-    padding-top: 60%;
-    transition: 1s;
-}
-
-.introduction:hover {
-    transform: scale(1.01, 1.01);
-    margin-bottom: 10px;
-}
-
-.introduction-text:hover {
-    opacity: 100%;
-    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
-}
-
-@media (max-width: 900px) {
-    .introduction {
-        margin-left: 0;
-    }
-}
-
-@media (pointer:none), (pointer:coarse) {
-    .introduction-text {
-        opacity: 100%;
-        background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
-        transition: opacity 1s;
-    }
+    padding: 100px;
+    z-index: 1;
+    height: 800px;
 }
 
 /* Footer */
 footer {
-    position: sticky;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(54, 54, 54);
     box-shadow: 4px 4px 20px inset rgb(39, 39, 39);
     color: white;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 10px 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin: 16px;
-}
-
-.brand,
-.thank-you-note {
-    text-align: center;
-}
-
-.brand {
-    font-weight: bold;
-    font-size: 16px;
-    color: rgb(44, 96, 192);
-}
-
-.thank-you-note,
-.contacts {
-    font-weight: bold;
-    font-size: 20px;
+.github-icon {
+    filter: invert(100%);
+    height: 20px;
 }
