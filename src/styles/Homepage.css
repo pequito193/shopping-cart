@@ -28,6 +28,10 @@ footer {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+.github:hover {
+    transform: scale(1.05, 1.05);
+}
+
 .github-icon {
     filter: invert(100%);
     height: 20px;
