@@ -5,13 +5,13 @@
 
 /* Main */
 .homepage-main {
-    background-color: rgb(202, 211, 221);
     background-image: url('./../assets/images/worldmap.jpg');
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     padding: 100px;
     z-index: 1;
-    height: 800px;
+    height: 700px;
 }
 
 /* Footer */
