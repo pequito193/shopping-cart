@@ -6,7 +6,9 @@ function Homepage() {
     return (
         <React.Fragment>
             <div className="main">
-                <div className="introduction"></div>
+                <div className="introduction">
+                    <span className="introduction-text">We at Map World™ share a love for cartography and all it entails. Check out our catalog to discover what we have to offer!</span>
+                </div>
             </div> 
             <footer>
                 <p className="thank-you-note">Thank you for choosing us.</p>
