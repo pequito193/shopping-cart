@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Homepage from './components/Homepage';
+import Home from './components/Home';
 import Catalog from './components/Catalog';
 import Cart from './components/Cart';
 import Header from './components/Header';
@@ -12,7 +12,7 @@ function App() {
     <React.Fragment>
         <Header />
         <Routes>
-          <Route exact path="/shopping-cart/" element={<Homepage />} />
+          <Route exact path="/shopping-cart/" element={<Home />} />
           <Route exact path="/shopping-cart/catalog" element={<Catalog />} />
           <Route exact path="/shopping-cart/cart" element={<Cart />} />
         </Routes>

@@ -4,7 +4,7 @@
 }
 
 /* Main */
-.homepage-main {
+.home-main {
     margin-top: 100px;
     background-image: url('./../assets/images/worldmap.jpg');
     background-position: center center;
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: 800px) {
-    .homepage-main {
+    .home-main {
         margin-top: 120px;
     }
 }

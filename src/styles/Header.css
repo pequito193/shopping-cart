@@ -81,19 +81,12 @@ a:visited {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .header-wrapper {
-        justify-content: center;
         gap: 25px;
     }
 
     .header-element {
         font-size: 22px;
-    }
-}
-
-@media (max-width: 380px) {
-    .header-wrapper {
-        gap: 20px;
     }
 }

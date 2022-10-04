@@ -1,11 +1,11 @@
 import React from "react";
-import './../styles/Homepage.css'
+import './../styles/Home.css'
 
 function Homepage() {
 
     return (
         <React.Fragment>
-            <div className="homepage-main"></div> 
+            <div className="home-main"></div> 
         </React.Fragment>
     )
 }
