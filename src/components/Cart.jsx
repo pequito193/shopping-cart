@@ -1,9 +1,12 @@
 import React from "react";
+import Header from "./Header";
 
 function Cart() {
     
     return (
-        <p>Cart</p>
+        <React.Fragment>
+            <Header />
+        </React.Fragment>
     )
 }
 

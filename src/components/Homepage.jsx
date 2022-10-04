@@ -1,16 +1,16 @@
 import React from "react";
 import './../styles/Homepage.css'
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Homepage() {
 
     return (
         <React.Fragment>
+            <Header />
             <div className="homepage-main">
             </div> 
-            <footer>
-                <a target='blank' href='https://github.com/pequito193/' className="github">pequito193 </a>
-                <img className="github-icon" src={require('./../assets/icons/github.png')} alt="github icon" />
-            </footer>
+            <Footer />
         </React.Fragment>
     )
 }
