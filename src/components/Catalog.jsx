@@ -1,8 +1,6 @@
 import React from "react";
 import './../styles/Catalog.css'
 import { catalogItems } from "./CatalogItems";
-import Header from './Header';
-import Footer from './Footer';
 
 function Catalog() {
 
@@ -22,11 +20,9 @@ function Catalog() {
 
     return (
         <React.Fragment>
-            <Header />
             <div className="catalog-main">
                 {catalogList}
             </div>
-            <Footer />
         </React.Fragment>
     )
 }

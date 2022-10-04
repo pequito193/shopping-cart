@@ -3,6 +3,7 @@ body {
 }
 
 .catalog-main {
+    margin-top: 100px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -10,6 +11,23 @@ body {
     gap: 80px;
     padding: 30px;
     margin-bottom: 20px;
+    animation: appear ease 2s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 40%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .catalog-main {
+        margin-top: 120px;
+    }
 }
 
 .item-wrapper {
