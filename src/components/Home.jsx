@@ -1,7 +1,7 @@
 import React from "react";
 import './../styles/Home.css'
 
-function Homepage() {
+function Home() {
 
     return (
         <React.Fragment>
@@ -10,4 +10,4 @@ function Homepage() {
     )
 }
 
-export default Homepage;
+export default Home;
