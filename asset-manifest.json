@@ -1,21 +1,30 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.55856c0b.css",
-    "main.js": "/shopping-cart/static/js/main.71d728e2.js",
+    "main.css": "/shopping-cart/static/css/main.cfe72693.css",
+    "main.js": "/shopping-cart/static/js/main.7e10018f.js",
+    "static/media/middle-east.jpg": "/shopping-cart/static/media/middle-east.05a62ffccaddbdb7f070.jpg",
+    "static/media/mexico.jpg": "/shopping-cart/static/media/mexico.37239ede9a5773d9da16.jpg",
+    "static/media/china.webp": "/shopping-cart/static/media/china.b52bafd50f4c9072c725.webp",
+    "static/media/andes.webp": "/shopping-cart/static/media/andes.7d0aeadb3da2c507b3fb.webp",
+    "static/media/india.webp": "/shopping-cart/static/media/india.a6052426d5d792f2837f.webp",
     "static/media/iran.jpg": "/shopping-cart/static/media/iran.80ec3d3cf66153980b8d.jpg",
     "static/media/scandinavia.jpg": "/shopping-cart/static/media/scandinavia.ea42928e89815679cebf.jpg",
+    "static/media/australia.webp": "/shopping-cart/static/media/australia.9cd160d21c95e0c8e7b5.webp",
     "static/media/southeast-asia.jpg": "/shopping-cart/static/media/southeast-asia.e25fa26cb880b0f26f3c.jpg",
     "static/media/Roboto-Medium.ttf": "/shopping-cart/static/media/Roboto-Medium.d2d7f0c01bffaa5ec8f7.ttf",
+    "static/media/korea-japan.webp": "/shopping-cart/static/media/korea-japan.8a2b8469d333ebf584c1.webp",
+    "static/media/europe.webp": "/shopping-cart/static/media/europe.7c32f1db89dff85a73fb.webp",
+    "static/media/patagonia.jpg": "/shopping-cart/static/media/patagonia.8fb33b75bc38ec3332ef.jpg",
     "static/media/worldmap.jpg": "/shopping-cart/static/media/worldmap.77909ee24c5448c2c003.jpg",
     "static/media/favicon.ico": "/shopping-cart/static/media/favicon.3930fd123d50ec150b53.ico",
     "static/media/github.png": "/shopping-cart/static/media/github.f11021803f68852df283.png",
     "static/media/shopping-cart.png": "/shopping-cart/static/media/shopping-cart.b963fd0073178ec188a9.png",
     "index.html": "/shopping-cart/index.html",
-    "main.55856c0b.css.map": "/shopping-cart/static/css/main.55856c0b.css.map",
-    "main.71d728e2.js.map": "/shopping-cart/static/js/main.71d728e2.js.map"
+    "main.cfe72693.css.map": "/shopping-cart/static/css/main.cfe72693.css.map",
+    "main.7e10018f.js.map": "/shopping-cart/static/js/main.7e10018f.js.map"
   },
   "entrypoints": [
-    "static/css/main.55856c0b.css",
-    "static/js/main.71d728e2.js"
+    "static/css/main.cfe72693.css",
+    "static/js/main.7e10018f.js"
   ]
 }
