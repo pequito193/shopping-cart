@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.cf59422a.css",
-    "main.js": "/shopping-cart/static/js/main.df7716ab.js",
+    "main.css": "/shopping-cart/static/css/main.21eb0ef4.css",
+    "main.js": "/shopping-cart/static/js/main.651bfb41.js",
     "static/media/middle-east.jpg": "/shopping-cart/static/media/middle-east.05a62ffccaddbdb7f070.jpg",
     "static/media/mexico.jpg": "/shopping-cart/static/media/mexico.37239ede9a5773d9da16.jpg",
     "static/media/china.webp": "/shopping-cart/static/media/china.b52bafd50f4c9072c725.webp",
@@ -15,16 +15,17 @@
     "static/media/korea-japan.webp": "/shopping-cart/static/media/korea-japan.8a2b8469d333ebf584c1.webp",
     "static/media/europe.webp": "/shopping-cart/static/media/europe.7c32f1db89dff85a73fb.webp",
     "static/media/patagonia.jpg": "/shopping-cart/static/media/patagonia.8fb33b75bc38ec3332ef.jpg",
+    "static/media/geography.jpg": "/shopping-cart/static/media/geography.d1de57a79458f68542be.jpg",
     "static/media/worldmap.jpg": "/shopping-cart/static/media/worldmap.77909ee24c5448c2c003.jpg",
     "static/media/favicon.ico": "/shopping-cart/static/media/favicon.3930fd123d50ec150b53.ico",
     "static/media/github.png": "/shopping-cart/static/media/github.f11021803f68852df283.png",
     "static/media/shopping-cart.png": "/shopping-cart/static/media/shopping-cart.b963fd0073178ec188a9.png",
     "index.html": "/shopping-cart/index.html",
-    "main.cf59422a.css.map": "/shopping-cart/static/css/main.cf59422a.css.map",
-    "main.df7716ab.js.map": "/shopping-cart/static/js/main.df7716ab.js.map"
+    "main.21eb0ef4.css.map": "/shopping-cart/static/css/main.21eb0ef4.css.map",
+    "main.651bfb41.js.map": "/shopping-cart/static/js/main.651bfb41.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf59422a.css",
-    "static/js/main.df7716ab.js"
+    "static/css/main.21eb0ef4.css",
+    "static/js/main.651bfb41.js"
   ]
 }
