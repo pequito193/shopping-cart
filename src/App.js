@@ -8,9 +8,9 @@ function App() {
   return (
     <React.Fragment>
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/shopping-cart/" element={<Homepage />} />
+          <Route path="/shopping-cart/catalog" element={<Catalog />} />
+          <Route path="/shopping-cart/cart" element={<Cart />} />
         </Routes>
     </React.Fragment>
   );
