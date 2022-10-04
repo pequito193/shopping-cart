@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.23237ebd.css",
-    "main.js": "/shopping-cart/static/js/main.c556c3f2.js",
+    "main.css": "/shopping-cart/static/css/main.cf59422a.css",
+    "main.js": "/shopping-cart/static/js/main.32ce08b4.js",
     "static/media/middle-east.jpg": "/shopping-cart/static/media/middle-east.05a62ffccaddbdb7f070.jpg",
     "static/media/mexico.jpg": "/shopping-cart/static/media/mexico.37239ede9a5773d9da16.jpg",
     "static/media/china.webp": "/shopping-cart/static/media/china.b52bafd50f4c9072c725.webp",
@@ -20,11 +20,11 @@
     "static/media/github.png": "/shopping-cart/static/media/github.f11021803f68852df283.png",
     "static/media/shopping-cart.png": "/shopping-cart/static/media/shopping-cart.b963fd0073178ec188a9.png",
     "index.html": "/shopping-cart/index.html",
-    "main.23237ebd.css.map": "/shopping-cart/static/css/main.23237ebd.css.map",
-    "main.c556c3f2.js.map": "/shopping-cart/static/js/main.c556c3f2.js.map"
+    "main.cf59422a.css.map": "/shopping-cart/static/css/main.cf59422a.css.map",
+    "main.32ce08b4.js.map": "/shopping-cart/static/js/main.32ce08b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.23237ebd.css",
-    "static/js/main.c556c3f2.js"
+    "static/css/main.cf59422a.css",
+    "static/js/main.32ce08b4.js"
   ]
 }
