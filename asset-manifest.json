@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.7e38e1dc.css",
-    "main.js": "/shopping-cart/static/js/main.4254f392.js",
+    "main.js": "/shopping-cart/static/js/main.a4d5ce05.js",
     "static/media/middle-east.jpg": "/shopping-cart/static/media/middle-east.05a62ffccaddbdb7f070.jpg",
     "static/media/mexico.jpg": "/shopping-cart/static/media/mexico.37239ede9a5773d9da16.jpg",
     "static/media/china.webp": "/shopping-cart/static/media/china.b52bafd50f4c9072c725.webp",
@@ -22,10 +22,10 @@
     "static/media/shopping-cart.png": "/shopping-cart/static/media/shopping-cart.b963fd0073178ec188a9.png",
     "index.html": "/shopping-cart/index.html",
     "main.7e38e1dc.css.map": "/shopping-cart/static/css/main.7e38e1dc.css.map",
-    "main.4254f392.js.map": "/shopping-cart/static/js/main.4254f392.js.map"
+    "main.a4d5ce05.js.map": "/shopping-cart/static/js/main.a4d5ce05.js.map"
   },
   "entrypoints": [
     "static/css/main.7e38e1dc.css",
-    "static/js/main.4254f392.js"
+    "static/js/main.a4d5ce05.js"
   ]
 }
