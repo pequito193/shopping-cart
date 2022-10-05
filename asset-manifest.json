@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.583d537d.css",
+    "main.css": "/shopping-cart/static/css/main.7e38e1dc.css",
     "main.js": "/shopping-cart/static/js/main.4254f392.js",
     "static/media/middle-east.jpg": "/shopping-cart/static/media/middle-east.05a62ffccaddbdb7f070.jpg",
     "static/media/mexico.jpg": "/shopping-cart/static/media/mexico.37239ede9a5773d9da16.jpg",
@@ -21,11 +21,11 @@
     "static/media/github.png": "/shopping-cart/static/media/github.f11021803f68852df283.png",
     "static/media/shopping-cart.png": "/shopping-cart/static/media/shopping-cart.b963fd0073178ec188a9.png",
     "index.html": "/shopping-cart/index.html",
-    "main.583d537d.css.map": "/shopping-cart/static/css/main.583d537d.css.map",
+    "main.7e38e1dc.css.map": "/shopping-cart/static/css/main.7e38e1dc.css.map",
     "main.4254f392.js.map": "/shopping-cart/static/js/main.4254f392.js.map"
   },
   "entrypoints": [
-    "static/css/main.583d537d.css",
+    "static/css/main.7e38e1dc.css",
     "static/js/main.4254f392.js"
   ]
 }
