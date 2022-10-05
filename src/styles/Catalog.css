@@ -68,12 +68,27 @@ body {
     font-size: 20px;
 }
 
+.catalog-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.quantity-input {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 1px solid rgb(209, 209, 209);
+}
+
 .add-to-cart {
     background-color: rgb(37, 37, 37);
     box-shadow: 6px 6px 8px inset rgb(27, 27, 27);
     color: white;
     border: none;
-    width: 80%;
+    width: 100px;
     height: 40px;
     font-size: 16px;
     font-weight: bold;
@@ -83,4 +98,16 @@ body {
     cursor: pointer;
     box-shadow: none;
     background-color: rgb(75, 75, 75);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
