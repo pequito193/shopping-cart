@@ -3,17 +3,18 @@ import './../styles/Cart.css';
 
 function Cart(props) {
     
-    const { totalCost, cartItems, handleAddItemAmount } = props;
+    const { totalCost, cartItems, handleIncreaseAmount, handleDecreaseAmount } = props;
 
     let cartItemsList = [];
-    // for (let i = 0; i < cartItems.length; i++) {
-    //     cartItemsList.push (
-    //         <form>
-    //             <button className="change-value">-</button>
-    //             <button className="change-value">+</button>
-    //         </form>
-    //     );
-    // };
+    for (let i = 0; i < cartItems.length; i++) {
+        cartItemsList.push (
+            <form key={cartItems[i].name}>
+                <button className="change-value" onClick={handleDecreaseAmount}>-</button>
+                <span className="item-quantity">{cartItems[i].quantity}</span>
+                <button className="change-value" onClick={handleIncreaseAmount}>+</button>
+            </form>
+        );
+    };
 
 
     return (

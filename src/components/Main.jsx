@@ -46,7 +46,11 @@ function Main() {
 
 
 
-    function handleAddItemAmount(e) {
+    function handleIncreaseAmount(e) {
+        e.preventDefault();
+    }
+
+    function handleDecreaseAmount(e) {
         e.preventDefault();
     }
 
@@ -54,9 +58,13 @@ function Main() {
 
     // Updates the total cost anytime the cartItems array changes
     useEffect( () => {
+        let newCost = 0;
         for (let i = 0; i < cartItems.length; i++) {
-            setTotalCost(totalCost + (cartItems[i].price * cartItems[i].quantity));
+            let holderVariable = cartItems[i].price * cartItems[i].quantity;
+            newCost = newCost + holderVariable;
         }
+        let newRoundedCost = Math.round((newCost + Number.EPSILON) * 100) / 100;
+        setTotalCost(newRoundedCost);
         console.log(cartItems);
     }, [cartItems]);
 
@@ -67,7 +75,7 @@ function Main() {
             <Routes>
                 <Route exact path="/shopping-cart/" element={<Home />} />
                 <Route exact path="/shopping-cart/catalog" element={<Catalog handleAddToCart={handleAddToCart} />} />
-                <Route exact path="/shopping-cart/cart" element={<Cart handleAddItemAmount={handleAddItemAmount} totalCost={totalCost} cartItems={cartItems} />} />
+                <Route exact path="/shopping-cart/cart" element={<Cart handleIncreaseAmount={handleIncreaseAmount} handleDecreaseAmount={handleDecreaseAmount} totalCost={totalCost} cartItems={cartItems} />} />
             </Routes>
         </React.Fragment>
     );
