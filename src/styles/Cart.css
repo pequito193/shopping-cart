@@ -2,10 +2,131 @@
     margin-top: 100px;
     padding: 20px;
     font-size: 1.5rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: appear ease 1s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.cart-table {
+    margin: 50px auto 60px;
+    max-width: 80vw;
+}
+
+td {
+    border: 2px solid rgb(200, 200, 200);
+    background-color: rgb(249, 249, 249);
+    padding: 14px;
+}
+
+.table-title {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    font-weight: bold;
+}
+
+.identifier {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 20vw;
+    min-width: fit-content;
+    max-width: 800px;
+}
+
+.cart-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart-image {
+    width: 60px;
+}
+
+.change-value {
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(47, 47, 47);
+    box-shadow: 6px 6px 8px inset rgb(27, 27, 27);
+    color: white;
+    font-weight: bold;
+    width: 20px;
+    height: 30px;
+}
+
+.change-value:hover {
+    background-color: rgb(75, 75, 75);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.remove {
+    background-color: rgb(202, 7, 7);
+    color: white;
+    border: none;
+    height: 32px;
+    width: 32px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.remove:hover {
+    cursor: pointer;
+    background-color: rgb(245, 42, 42);
+}
+
+.checkout-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cost {
+    font-size: 1.6rem;
+}
+
+.checkout {
+    border: none;
+    background: linear-gradient(90deg, rgb(33, 97, 182) 30%, rgb(88, 185, 112) 100%);
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    padding: 6px 14px;
+    font-size: 18px;
+}
+
+.checkout:hover {
+    background-color: rgb(75, 75, 75);
+    box-shadow: none;
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
     .cart-main {
         margin-top: 120px;
+    }
+}
+
+@media (max-width: 500px) {
+    table {
+        font-size: 5vw;
+    }
+
+    td {
+        padding: 8px;
     }
 }
