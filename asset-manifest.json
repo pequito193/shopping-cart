@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.7e38e1dc.css",
-    "main.js": "/shopping-cart/static/js/main.0c2f39d1.js",
+    "main.css": "/shopping-cart/static/css/main.b70162e6.css",
+    "main.js": "/shopping-cart/static/js/main.685ed153.js",
     "static/media/middle-east.jpg": "/shopping-cart/static/media/middle-east.05a62ffccaddbdb7f070.jpg",
     "static/media/mexico.jpg": "/shopping-cart/static/media/mexico.37239ede9a5773d9da16.jpg",
     "static/media/china.webp": "/shopping-cart/static/media/china.b52bafd50f4c9072c725.webp",
@@ -18,14 +18,15 @@
     "static/media/geography.jpg": "/shopping-cart/static/media/geography.d1de57a79458f68542be.jpg",
     "static/media/worldmap.jpg": "/shopping-cart/static/media/worldmap.77909ee24c5448c2c003.jpg",
     "static/media/favicon.ico": "/shopping-cart/static/media/favicon.3930fd123d50ec150b53.ico",
+    "static/media/FredokaOne-Regular.ttf": "/shopping-cart/static/media/FredokaOne-Regular.4aea26dd6637dfac0fac.ttf",
     "static/media/github.png": "/shopping-cart/static/media/github.f11021803f68852df283.png",
     "static/media/shopping-cart.png": "/shopping-cart/static/media/shopping-cart.b963fd0073178ec188a9.png",
     "index.html": "/shopping-cart/index.html",
-    "main.7e38e1dc.css.map": "/shopping-cart/static/css/main.7e38e1dc.css.map",
-    "main.0c2f39d1.js.map": "/shopping-cart/static/js/main.0c2f39d1.js.map"
+    "main.b70162e6.css.map": "/shopping-cart/static/css/main.b70162e6.css.map",
+    "main.685ed153.js.map": "/shopping-cart/static/js/main.685ed153.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e38e1dc.css",
-    "static/js/main.0c2f39d1.js"
+    "static/css/main.b70162e6.css",
+    "static/js/main.685ed153.js"
   ]
 }
