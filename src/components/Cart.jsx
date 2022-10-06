@@ -8,11 +8,23 @@ function Cart(props) {
     let cartItemsList = [];
     for (let i = 0; i < cartItems.length; i++) {
         cartItemsList.push (
-            <form key={cartItems[i].name}>
-                <button className="change-value" onClick={handleDecreaseAmount}>-</button>
-                <span className="item-quantity">{cartItems[i].quantity}</span>
-                <button className="change-value" onClick={handleIncreaseAmount}>+</button>
-            </form>
+            <tr key={cartItems[i].name}>
+                    <td className="identifier">
+                        <img className="cart-image" src={require(`./../assets/catalog-items/${cartItems[i].ref}`)} alt='' />
+                        <p className="item-name">{cartItems[i].name}</p>
+                    </td>
+                    <td>
+                        <form className="cart-form">
+                            <button className="change-value" onClick={handleDecreaseAmount}>-</button>
+                            <span className="item-quantity">{cartItems[i].quantity}</span>
+                            <button className="change-value" onClick={handleIncreaseAmount}>+</button>
+                        </form>
+                    </td>
+                    <td>${cartItems[i].price * cartItems[i].quantity}</td>
+                    <td>
+                        <button className="remove">X</button>
+                    </td>
+            </tr>
         );
     };
 
@@ -21,9 +33,22 @@ function Cart(props) {
         <React.Fragment>
             <div className="cart-main">
                 <h1>Your Cart</h1>
-                <p className="cost">Total: ${totalCost}</p>
                 <div className="cart-items-display">
-                    {cartItemsList}
+                    <table className="cart-table">
+                        <thead>
+                            <tr>
+                                <td className="table-title">Name</td>
+                                <td className="table-title">Quantity</td>
+                                <td className="table-title">Price</td>
+                                <td className="table-title">Remove</td>
+                            </tr>
+                        </thead>
+                        <tbody>{cartItemsList}</tbody>
+                    </table>
+                <div className="checkout-wrapper">
+                    <p className="cost">Total: ${totalCost}</p>
+                    <button className="checkout">Checkout</button>
+                </div>
                 </div>
             </div>
         </React.Fragment>

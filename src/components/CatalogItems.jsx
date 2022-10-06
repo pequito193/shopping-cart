@@ -5,7 +5,7 @@ let catalogItems = [
     ['scandinavia.jpg', '$14.49', 'Scandinavia'],
     ['andes.webp', '$15.99', 'Andes and Amazon Basin'],
     ['europe.webp', '$15.99', 'Europe'],
-    ['korea-japan.webp', '$15.99', 'Korean and Japan'],
+    ['korea-japan.webp', '$15.99', 'Korea and Japan'],
     ['patagonia.jpg', '$15.99', 'Patagonia'],
     ['china.webp', '$18.49', 'Eastern China'],
     ['india.webp', '$18.49', 'Indian Subcontinent'],

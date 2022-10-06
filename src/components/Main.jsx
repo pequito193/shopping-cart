@@ -17,6 +17,7 @@ function Main() {
         let targetPrice = Number(e.target[0].value.substring(1));
         let targetName = e.target[1].value;
         let targetQuantity = Number(e.target[2].value);
+        let targetRef = e.target[3].value;
 
         // Sets the quantity to 1 incase the user doesn't input anything
         if (targetQuantity === 0 || targetQuantity === undefined) {
@@ -27,8 +28,8 @@ function Main() {
         for (let i = 0; i < cartItems.length; i++) {
             if (targetName === cartItems[i].name && targetQuantity === cartItems[i].quantity) {
                 return;
-            } 
-            else if (targetName === cartItems[i].name && targetQuantity != cartItems[i].quantity) {
+            }
+            else if (targetName === cartItems[i].name && targetQuantity !== cartItems[i].quantity) {
                 let updatedCartItems = structuredClone(cartItems);
                 updatedCartItems[i].quantity = targetQuantity;
                 setCartItems(updatedCartItems);
@@ -40,7 +41,8 @@ function Main() {
         setCartItems(cartItems.concat([{
             name: targetName,
             price: targetPrice,
-            quantity: targetQuantity
+            quantity: targetQuantity,
+            ref: targetRef
         }]));
     }
 
