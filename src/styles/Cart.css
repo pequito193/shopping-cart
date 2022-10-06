@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'FredokaOne';
+    src: url('./../assets/fonts/FredokaOne-Regular.ttf');
+}
+
 .cart-main {
     margin-top: 100px;
     padding: 20px;
@@ -35,15 +40,6 @@ td {
     font-weight: bold;
 }
 
-.identifier {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 20vw;
-    min-width: fit-content;
-    max-width: 800px;
-}
-
 .cart-form {
     display: flex;
     align-items: center;
@@ -73,19 +69,12 @@ td {
 }
 
 .remove {
-    background-color: rgb(202, 7, 7);
-    color: white;
-    border: none;
-    height: 32px;
-    width: 32px;
-    font-size: 20px;
+    font-family: 'FredokaOne', sans-serif;
+    color: rgb(202, 7, 7);
+    font-size: 32px;
     font-weight: bolder;
     text-align: center;
-}
-
-.remove:hover {
     cursor: pointer;
-    background-color: rgb(245, 42, 42);
 }
 
 .checkout-wrapper {
@@ -110,7 +99,7 @@ td {
 }
 
 .checkout:hover {
-    background-color: rgb(75, 75, 75);
+    background: linear-gradient(90deg, rgb(24, 76, 143) 30%, rgb(64, 148, 85) 100%);
     box-shadow: none;
     cursor: pointer;
 }
