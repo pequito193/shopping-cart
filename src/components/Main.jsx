@@ -10,7 +10,9 @@ function Main() {
 
     const [cartItems, setCartItems] = useState([]);
 
-
+    function round(x) {
+        return Math.round((x + Number.EPSILON) * 100) / 100;
+    }
 
     function handleAddToCart(e) {
         e.preventDefault();
@@ -40,7 +42,7 @@ function Main() {
         // Add the item to the cart
         setCartItems(cartItems.concat([{
             name: targetName,
-            price: targetPrice,
+            price: round(targetPrice),
             quantity: targetQuantity,
             ref: targetRef
         }]));
@@ -50,10 +52,31 @@ function Main() {
 
     function handleIncreaseAmount(e) {
         e.preventDefault();
+        let i = e.target.id;
+        if (cartItems[i].quantity === 100) {
+            return;
+        };
+        let updatedCartItems = structuredClone(cartItems);
+        updatedCartItems[i].quantity = cartItems[i].quantity + 1;
+        setCartItems(updatedCartItems);
     }
 
     function handleDecreaseAmount(e) {
         e.preventDefault();
+        let i = e.target.id;
+        if (cartItems[i].quantity === 1) {
+            return;
+        };
+        let updatedCartItems = structuredClone(cartItems);
+        updatedCartItems[i].quantity = cartItems[i].quantity - 1;
+        setCartItems(updatedCartItems);
+    }
+
+    function handleRemoveItem(e) {
+        let i = e.target.id;
+        let updatedCartItems = structuredClone(cartItems);
+        updatedCartItems.splice(i, 1);
+        setCartItems(updatedCartItems);
     }
 
 
@@ -65,9 +88,7 @@ function Main() {
             let holderVariable = cartItems[i].price * cartItems[i].quantity;
             newCost = newCost + holderVariable;
         }
-        let newRoundedCost = Math.round((newCost + Number.EPSILON) * 100) / 100;
-        setTotalCost(newRoundedCost);
-        console.log(cartItems);
+        setTotalCost(round(newCost));
     }, [cartItems]);
 
 
@@ -77,7 +98,7 @@ function Main() {
             <Routes>
                 <Route exact path="/shopping-cart/" element={<Home />} />
                 <Route exact path="/shopping-cart/catalog" element={<Catalog handleAddToCart={handleAddToCart} />} />
-                <Route exact path="/shopping-cart/cart" element={<Cart handleIncreaseAmount={handleIncreaseAmount} handleDecreaseAmount={handleDecreaseAmount} totalCost={totalCost} cartItems={cartItems} />} />
+                <Route exact path="/shopping-cart/cart" element={<Cart handleRemoveItem={handleRemoveItem} handleIncreaseAmount={handleIncreaseAmount} handleDecreaseAmount={handleDecreaseAmount} totalCost={totalCost} cartItems={cartItems} />} />
             </Routes>
         </React.Fragment>
     );

@@ -3,26 +3,29 @@ import './../styles/Cart.css';
 
 function Cart(props) {
     
-    const { totalCost, cartItems, handleIncreaseAmount, handleDecreaseAmount } = props;
+    const { totalCost, cartItems, handleIncreaseAmount, handleDecreaseAmount, handleRemoveItem } = props;
+
+    function round(x) {
+        return Math.round((x + Number.EPSILON) * 100) / 100;
+    }
 
     let cartItemsList = [];
     for (let i = 0; i < cartItems.length; i++) {
         cartItemsList.push (
             <tr key={cartItems[i].name}>
-                    <td className="identifier">
-                        <img className="cart-image" src={require(`./../assets/catalog-items/${cartItems[i].ref}`)} alt='' />
+                    <td>
                         <p className="item-name">{cartItems[i].name}</p>
                     </td>
                     <td>
                         <form className="cart-form">
-                            <button className="change-value" onClick={handleDecreaseAmount}>-</button>
+                            <button id={i} className="change-value" onClick={handleDecreaseAmount}>-</button>
                             <span className="item-quantity">{cartItems[i].quantity}</span>
-                            <button className="change-value" onClick={handleIncreaseAmount}>+</button>
+                            <button id={i} className="change-value" onClick={handleIncreaseAmount}>+</button>
                         </form>
                     </td>
-                    <td>${cartItems[i].price * cartItems[i].quantity}</td>
+                    <td>${round(cartItems[i].price * cartItems[i].quantity)}</td>
                     <td>
-                        <button className="remove">X</button>
+                        <p onClick={handleRemoveItem} id={i} className="remove">X</p>
                     </td>
             </tr>
         );
@@ -46,7 +49,7 @@ function Cart(props) {
                         <tbody>{cartItemsList}</tbody>
                     </table>
                 <div className="checkout-wrapper">
-                    <p className="cost">Total: ${totalCost}</p>
+                    <p className="cost">Total: ${round(totalCost)}</p>
                     <button className="checkout">Checkout</button>
                 </div>
                 </div>
