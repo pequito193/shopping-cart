@@ -21,6 +21,9 @@ function Main() {
         let targetQuantity = Number(e.target[2].value);
         let targetRef = e.target[3].value;
 
+        // Clear up the input field
+        e.target[2].value = '';
+
         // Sets the quantity to 1 incase the user doesn't input anything
         if (targetQuantity === 0 || targetQuantity === undefined) {
             targetQuantity = 1;
@@ -30,14 +33,18 @@ function Main() {
         for (let i = 0; i < cartItems.length; i++) {
             if (targetName === cartItems[i].name) {
                 let updatedCartItems = structuredClone(cartItems);
-                updatedCartItems[i].quantity = targetQuantity + cartItems[i].quantity;
+                let newQuantity = targetQuantity + cartItems[i].quantity;
+
+                // Caps the quantity at 100
+                if (newQuantity > 100) {
+                    newQuantity = 100;
+                }
+
+                updatedCartItems[i].quantity = newQuantity;
                 setCartItems(updatedCartItems);
                 return;
             }
         }
-
-        // Clear up the input field
-        e.target[2].value = '';
 
         // Add the item to the cart
         setCartItems(cartItems.concat([{
