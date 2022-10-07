@@ -102,8 +102,9 @@ td {
 }
 
 @media (max-width: 500px) {
-    table {
+    .cart-table {
         font-size: 5vw;
+        margin-left: 2vw;
     }
 
     td {
