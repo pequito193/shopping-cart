@@ -28,16 +28,16 @@ function Main() {
 
         // Check if the item is already in the cart, and if it is but a new quantity has been chosen, update the quantity
         for (let i = 0; i < cartItems.length; i++) {
-            if (targetName === cartItems[i].name && targetQuantity === cartItems[i].quantity) {
-                return;
-            }
-            else if (targetName === cartItems[i].name && targetQuantity !== cartItems[i].quantity) {
+            if (targetName === cartItems[i].name) {
                 let updatedCartItems = structuredClone(cartItems);
-                updatedCartItems[i].quantity = targetQuantity;
+                updatedCartItems[i].quantity = targetQuantity + cartItems[i].quantity;
                 setCartItems(updatedCartItems);
                 return;
             }
         }
+
+        // Clear up the input field
+        e.target[2].value = '';
 
         // Add the item to the cart
         setCartItems(cartItems.concat([{

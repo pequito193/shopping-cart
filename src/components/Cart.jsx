@@ -18,7 +18,7 @@ function Cart(props) {
                     </td>
                     <td>
                         <form className="cart-form">
-                            <button id={i} className="change-value" onClick={handleDecreaseAmount}>-</button>
+                            <button id={i} className="change-value" onClick={handleDecreaseAmount}>–</button>
                             <span className="item-quantity">{cartItems[i].quantity}</span>
                             <button id={i} className="change-value" onClick={handleIncreaseAmount}>+</button>
                         </form>
@@ -35,7 +35,7 @@ function Cart(props) {
     return (
         <React.Fragment>
             <div className="cart-main">
-                <h1>Your Cart</h1>
+                <h1 className="cart-title">Your Cart ({cartItemsList.length})</h1>
                 <div className="cart-items-display">
                     <table className="cart-table">
                         <thead>
@@ -47,11 +47,16 @@ function Cart(props) {
                             </tr>
                         </thead>
                         <tbody>{cartItemsList}</tbody>
+                        <tbody>
+                            <tr>
+                                <td className="table-footer">Total</td>
+                                <td className="table-footer"></td>
+                                <td className="table-footer">${totalCost}</td>
+                                <td className="table-footer"></td>
+                            </tr>
+                        </tbody>
                     </table>
-                <div className="checkout-wrapper">
-                    <p className="cost">Total: ${round(totalCost)}</p>
-                    <button className="checkout">Checkout</button>
-                </div>
+                <button className="checkout">Checkout</button>
                 </div>
             </div>
         </React.Fragment>

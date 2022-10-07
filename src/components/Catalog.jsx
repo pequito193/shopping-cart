@@ -18,7 +18,8 @@ function Catalog(props) {
                 <form onSubmit={handleAddToCart} className='catalog-form'>
                     <input type = "hidden" name = "price" value={catalogItems[i][1]} />
                     <input type = "hidden" name = "name" value={catalogItems[i][2]}  />
-                    Quantity<input className="quantity-input" type='number' name="quantity" placeholder="1" min={1} max={100} />
+                    Quantity
+                    <input className="quantity-input" type='number' name="quantity" placeholder="1" min={1} max={100} />
                     <input type='hidden' name="ref" value={catalogItems[i][0]} />
                     <button type="submit" className="add-to-cart">Add To Cart</button>
                 </form>
@@ -29,7 +30,8 @@ function Catalog(props) {
     return (
         <React.Fragment>
             <div className="catalog-main">
-                {catalogList}
+                <h1 className="catalog-title">Catalog</h1>
+                <div className="list-wrapper">{catalogList}</div>
             </div>
         </React.Fragment>
     )
