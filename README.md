@@ -1,3 +1,3 @@
-# Shopping Cart project, designed for educational purposes. Live at:
+Check it out at
 
-https://pequito193.github.io/shopping-cart/
+# https://pequito193.github.io/shopping-cart/
