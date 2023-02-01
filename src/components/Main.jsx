@@ -103,9 +103,9 @@ function Main() {
     return (
         <React.Fragment>
             <Routes>
-                <Route exact path="/shopping-cart/" element={<Home />} />
-                <Route exact path="/shopping-cart/catalog" element={<Catalog handleAddToCart={handleAddToCart} />} />
-                <Route exact path="/shopping-cart/cart" element={<Cart handleRemoveItem={handleRemoveItem} handleIncreaseAmount={handleIncreaseAmount} handleDecreaseAmount={handleDecreaseAmount} totalCost={totalCost} cartItems={cartItems} />} />
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/catalog" element={<Catalog handleAddToCart={handleAddToCart} />} />
+                <Route exact path="/cart" element={<Cart handleRemoveItem={handleRemoveItem} handleIncreaseAmount={handleIncreaseAmount} handleDecreaseAmount={handleDecreaseAmount} totalCost={totalCost} cartItems={cartItems} />} />
             </Routes>
         </React.Fragment>
     );

@@ -15,7 +15,7 @@ function Home() {
                         <em className="quote">"Geographers never get lost. They just do accidental field work"</em>
                         <p className="author">- Nicholas Chrisman</p>
                     </div>
-                    <Link to='/shopping-cart/catalog'><button className="shop-now">Shop Now</button></Link>
+                    <Link to='/catalog'><button className="shop-now">Shop Now</button></Link>
                 </div>
             </div> 
         </React.Fragment>
